@@ -1,0 +1,201 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "DMITRII TOLOKNOV",
+    "label": "DevOps Tech Lead",
+    "image": "https://media.licdn.com/dms/image/C4D03AQEPOXzqhmA0RQ/profile-displayphoto-shrink_800_800/0/1635593700942?e=1691020800&v=beta&t=hcxCQ_dSTp8fiTXIzJFPqQY1XeM8IFM4evcIihSVll4",
+    "email": "profiterole38@gmail.com",
+    "phone": "+79994646604",
+    "url": "https://cv.itbro.su",
+    "summary": "Hi there! I am taking the position of playing coach in FinTech company. I am looking for a new experience(cloud solutions would be great) and possibility improve my English.",
+    "location": {
+      "countryCode": "TH",
+      "address": "Phuket"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "",
+        "url": "https://www.linkedin.com/in/profiterole38/"
+      },
+      {
+        "network": "Telegram",
+        "username": "t.me: profiterole38",
+        "url": "https://t.me/profiterole38/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "CNP Processing GmbH, trade mark Processing.kz",
+      "position": "DevOps Tech Lead",
+      "startDate": "2022-10-31",
+      "endDate": "",
+      "highlights": [
+        "Helming with transfer monolite to microservices",
+        "Building hybrid infrastructure"
+      ],
+      "summary": "",
+      "url": "https://www.linkedin.com/company/3172175",
+      "location": "Remote"
+    },
+    {
+      "name": "БКС",
+      "position": "DevOps/SRE Team Lead",
+      "startDate": "2021-01-31",
+      "endDate": "2022-10-31",
+      "highlights": ["Maintenance and development of microservice infrastructure(self- hosted, including: VMs, orchestration, monitoring, log shipping, etc.).",
+                    "Support 25 developing Java, .NET and python teams.", 
+                    "Guidance and mentorship for other engineers.", 
+                    "The issue diagnostic, formulating tasks, allocating the tasks to the employees, supervising the processes", 
+                    "Researching new solutions to improve our DevOps function Architectural solutions for building infrastructure."],
+      "summary": "Led a team of DevOps and SRE engineers in designing and implementing highly available and scalable systems. Collaborated with cross-functional teams to drive efficiency, automation, and reliability throughout the software development lifecycle.",
+      "url": "https://www.linkedin.com/company/665549",
+      "location": "Москва, Россия"
+    },
+    {
+      "name": "БКС",
+      "position": "DevOps Engineer",
+      "startDate": "2018-06-30",
+      "endDate": "2021-01-31",
+      "highlights": [],
+      "summary": "Kubernetes, Docker;\nGitLab;\nci/cd pipeline на GitLab;\nRabbitMQ, Kafka;\nHelm charts.",
+      "url": "https://www.linkedin.com/company/665549",
+      "location": "Новосибирская область, Россия"
+    },
+    {
+      "name": "NPM Group, инновационная производственная компания",
+      "position": "Ведущий системный администратор",
+      "startDate": "2016-12-31",
+      "endDate": "2018-07-31",
+      "highlights": [],
+      "summary": null,
+      "url": "https://www.linkedin.com/company/6639188",
+      "location": "Новосибирская область, Россия"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "ACloudGuru",
+      "area": "Информационные технологии",
+      "studyType": "Диплом специалиста по инженерной специальности",
+      "startDate": "2022-11-01",
+      "endDate": "",
+      "score": "",
+      "courses": ["AWS DevOps","AWS Architect"]
+    },
+    {
+      "institution": "Братский Государственный Университет (БрГУ)",
+      "area": "Информационные технологии",
+      "studyType": "Диплом специалиста по инженерной специальности",
+      "startDate": "2010-12-31",
+      "endDate": "2015-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Site Reliability Engineering",
+      "keywords": [
+        "Incident Management",
+        "Monitoring and Alerting",
+        "Automation",
+        "Capacity Planning",
+        "Reliability Engineering",
+        "Fault Tolerance"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "keywords": [
+        "Continuous Integration",
+        "Continuous Delivery",
+        "Infrastructure as Code",
+        "Containerization",
+        "Automation",
+        "Orchestration"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "keywords": [
+        "Team Management",
+        "Mentoring",
+        "Coaching",
+        "Collaboration",
+        "Continuous Improvement"
+      ]
+    },
+    {
+      "name": "Cloud Platforms",
+      "keywords": [
+        "Amazon Web Services (AWS)"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "keywords": ["bash","python","lua","go"]
+    },
+    {
+      "name": "Databases & Message Queuing",
+      "keywords": ["PostgreSQL","MongoDB","Redis","Kafka","RabbitMQ"]
+    },
+    {
+      "name": "Operating Systems",
+      "keywords": [
+        "CentOS",
+        "Ubuntu/Debian"
+      ]
+    },
+    {
+      "name": "Infrastructure as Code",
+      "keywords": [
+        "Ansible",
+        "Terraform"
+      ]
+    },
+    {
+      "name": "Security and Quality",
+      "keywords": ["SAST","DAST","DependencyChecker","SonarQube","sops","Wazuh","Keycloak", "HashiCorp Vault"]
+    },
+    {
+      "name": "Logging and Monitoring",
+      "keywords": [
+        "ELK",
+        "OpenSearch",
+        "Grafana",
+        "Prometheus",
+        "VictoriaMetrics"
+      ]
+    },
+    {
+      "name": "Application Performance Monitoring",
+      "keywords": [
+        "Sentry",
+        "AppDynamics"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "ru",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "en",
+      "fluency": "A2"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}
