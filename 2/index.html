@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DMITRII TOLOKNOV</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,700|Roboto:300,400,700|Noto+Serif:400" rel="stylesheet" type="text/css">
+  <style>
+    body {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  background-color: #f6f6f6;
+}
+
+p {
+  display: inline;
+}
+
+a,span {
+  color: #4c92c1;
+  text-decoration: none;
+}
+
+.email,.site,.github,.phone-number,.address {
+  margin-bottom: .4em;
+  font-size: 1em;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card {
+  /*background-color: #fefefe;
+  box-shadow: 1px 1px 14px -5px rgba(0,0,0,0.5);
+  border-radius: 2px;*/
+  margin-bottom: 15px;
+}
+
+.header.card {
+  margin-top: 15px;
+  margin-right: 15px;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 15px 0 20px;
+  border-bottom: 1px dashed #CFCFCF;
+}
+
+section.card {
+  padding: 15px 15px 22.5px 20px;
+}
+
+.header {
+  overflow: auto;
+  margin-left: 6px;
+  margin-right: 12px;
+}
+
+.skill {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  margin-bottom: .4em;
+  color: #4c92c1;
+  font-weight: 400;
+}
+
+.skills p {
+  font-size: 1em;
+}
+
+#name {
+  font-family: 'Open Sans',Arial,sans-serif;
+  font-size: 3em;
+  font-weight: 400;
+  color: #555;
+  float: left;
+  margin: .1em .1em .2em;
+}
+
+#resume-container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.section-header {
+  margin-top: 0;
+  margin-bottom: .4em;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.left-content {
+  float: left;
+  width: 32%;
+  margin-left: 6px;
+}
+
+.left-content .section-header {
+  font-weight: 400;
+  color: #BC1B39;
+  text-transform: uppercase;
+}
+
+.left-content .section-content {
+  font-weight: 300;
+}
+
+.left-content .title {
+  font-weight: 400;
+  margin-bottom: .5em;
+  color: #4c92c1;
+}
+
+.left-content .card {
+  border-bottom: 1px dashed #CFCFCF;
+}
+
+.right-content {
+  width: 64%;
+  margin-right: 15px;
+  float: right;
+}
+
+.right-content .section-header {
+  /*color: #000;*/
+  color: #BC1B39;
+  text-transform: uppercase;
+}
+
+.right-content {
+  border-left: 1px dashed #CFCFCF;
+}
+
+.section-content {
+  overflow: auto;
+}
+
+.title {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .2em;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.duration {
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 300;
+  color: #3c82b1;
+  margin-top: .2em;
+  margin-bottom: .3em;
+  text-align: right;
+}
+
+.occupation {
+  font-size: 1em;
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 400;
+  margin-bottom: .5em;
+}
+
+.languages {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.list {
+  list-style-type: none;
+  font-size: 1em;
+}
+
+.location {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: .1em;
+}
+
+.left {
+  float: left;
+  width: 45%;
+  clear: both;
+}
+
+.right {
+  float: right;
+  width: 55%;
+}
+
+ul.list {
+  list-style-type: circle;
+  padding-left: 1.1rem;
+}
+
+ul.list li {
+  line-height: 135%;
+  margin-bottom: .2em;
+}
+
+ul.list li:before {
+  display: inline-block;
+  width: 0;
+  margin-left: 0;
+}
+
+.project,.employment,.education,.skills {
+  margin-bottom: .8em;
+}
+
+.education-info .title {
+  margin-bottom: .2em;
+  line-height: 130%;
+}
+
+.education.last {
+  margin-bottom: .8em !important;
+}
+
+.education .grade {
+  font-size: 1em;
+}
+
+.project-info {
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.last {
+  margin-bottom: 0!important;
+}
+
+.term {
+  font-size: 1.75em;
+  font-weight: 200;
+  color: #000;
+}
+
+#skills-container,.contact {
+  margin-bottom: 0;
+}
+
+.interests,.subtitle {
+  font-size: 1em;
+  margin-bottom: .2em;
+}
+
+.project .title,.employment .title {
+  color: #4c92c1;
+  font-weight: 400;
+}
+
+.employment .summary {
+  font-size: 1em;
+  margin-bottom: .4em;
+}
+
+#awards .summary {
+  font-size: 1em;
+}
+
+#summary {
+  font-size: 1em;
+}
+
+.contact .site {
+  font-size: .9em;
+}
+
+  </style>
+</head>
+
+<body>
+  <div id='resume-container'>
+    <div class='header card'>
+      <h1 id='name'>
+          DMITRII TOLOKNOV
+        </h1>
+      <span class='term'>DevOps Tech Lead</span>
+    </div>
+    <div class='left-content'>
+      <section class='card'>
+        <div class='section-header'>Contact</div>
+        <div class='section-content' id='contact'>
+          <div class='contact'>
+            <div class='address'>
+              , TH
+            </div>
+            <div class='email'>
+              <a href='mailto:profiterole38@gmail.com'>profiterole38@gmail.com</a>
+            </div>
+              
+            <div class='site'>
+              LinkedIn: <a href='https://www.linkedin.com/in/profiterole38/'></a>
+            </div>
+              
+            <div class='site'>
+              Telegram: <a href='https://t.me/profiterole38/'>t.me: profiterole38</a>
+            </div>
+              
+            <div class='phone-number last'>
+              <a href="tel:+79994646604">+79994646604</a>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      <section class='card'>
+        <div class='section-header'>Technical Skills</div>
+        <div class='section-content' id='technical-skills'>
+          <div id='skills-container'>
+            <div class='skills'>
+              <div class='skill'>Site Reliability Engineering</div>
+                
+              <p>
+                 Incident Management,  Monitoring and Alerting,  Automation,  Capacity Planning,  Reliability Engineering,  Fault Tolerance 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>DevOps</div>
+                
+              <p>
+                 Continuous Integration,  Continuous Delivery,  Infrastructure as Code,  Containerization,  Automation,  Orchestration 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Leadership</div>
+                
+              <p>
+                 Team Management,  Mentoring,  Coaching,  Collaboration,  Continuous Improvement 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Cloud Platforms</div>
+                
+              <p>
+                 Amazon Web Services (AWS) 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Programming Languages</div>
+                
+              <p>
+                 bash,  python,  lua,  go 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Databases &amp; Message Queuing</div>
+                
+              <p>
+                 PostgreSQL,  MongoDB,  Redis,  Kafka,  RabbitMQ 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Operating Systems</div>
+                
+              <p>
+                 CentOS,  Ubuntu/Debian 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Infrastructure as Code</div>
+                
+              <p>
+                 Ansible,  Terraform 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Security and Quality</div>
+                
+              <p>
+                 SAST,  DAST,  DependencyChecker,  SonarQube,  sops,  Wazuh,  Keycloak,  HashiCorp Vault 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Logging and Monitoring</div>
+                
+              <p>
+                 ELK,  OpenSearch,  Grafana,  Prometheus,  VictoriaMetrics 
+              </p>
+            </div>
+            <div class='skills'>
+              <div class='skill'>Application Performance Monitoring</div>
+                
+              <p>
+                 Sentry,  AppDynamics 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+       
+      <section class='card'>
+        <div class='section-header'>Education</div>
+        <div class='section-content' id='education'>
+          <div class='education last'>
+            <div class='education-info'>
+              <div class='title'>
+                Диплом специалиста по инженерной специальности in Информационные технологии
+                <br>at  ACloudGuru 
+              </div>
+              <div class='duration'>
+                 Nov 2022   - Present 
+              </div>
+            </div>
+
+          </div>
+          <div class='education last'>
+            <div class='education-info'>
+              <div class='title'>
+                Диплом специалиста по инженерной специальности in Информационные технологии
+                <br>at  Братский Государственный Университет (БрГУ) 
+              </div>
+              <div class='duration'>
+                 Dec 2010   - Dec 2015 
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+           </div>
+    <div class='right-content'>
+      <section class='card'>
+        <div class='section-header'>Summary</div>
+        <div class='section-content' id='summary'>
+          Hi there! I am taking the position of playing coach in FinTech company. I am looking for a new experience(cloud solutions would be great) and possibility improve my English.
+        </div>
+      </section>
+      <section class='card'>
+        <div class='section-header'>Employment</div>
+        <div class='section-content' id='employment'>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+  DevOps Tech Lead 
+              </div>
+              <div class='duration'>
+                 Oct 2022   - Present 
+              </div>
+            </div>
+            <div class='info'>
+ 
+              <ul class="list">
+                <li>Helming with transfer monolite to microservices</li>
+                <li>Building hybrid infrastructure</li>
+              </ul>
+            </div>
+          </div>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+  DevOps/SRE Team Lead 
+              </div>
+              <div class='duration'>
+                 Jan 2021   - Oct 2022 
+              </div>
+            </div>
+            <div class='info'>
+              <div class="summary">
+                Led a team of DevOps and SRE engineers in designing and implementing highly available and scalable systems. Collaborated with cross-functional teams to drive efficiency, automation, and reliability throughout the software development lifecycle.
+              </div>
+               
+              <ul class="list">
+                <li>Maintenance and development of microservice infrastructure(self- hosted, including: VMs, orchestration, monitoring, log shipping, etc.).</li>
+                <li>Support 25 developing Java, .NET and python teams.</li>
+                <li>Guidance and mentorship for other engineers.</li>
+                <li>The issue diagnostic, formulating tasks, allocating the tasks to the employees, supervising the processes</li>
+                <li>Researching new solutions to improve our DevOps function Architectural solutions for building infrastructure.</li>
+              </ul>
+            </div>
+          </div>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+  DevOps Engineer 
+              </div>
+              <div class='duration'>
+                 Jun 2018   - Jan 2021 
+              </div>
+            </div>
+            <div class='info'>
+              <div class="summary">
+                Kubernetes, Docker;
+GitLab;
+ci/cd pipeline на GitLab;
+RabbitMQ, Kafka;
+Helm charts.
+              </div>
+                           </div>
+          </div>
+          <div class='employment'>
+            <div class='employment-info'>
+              <div class='title'>
+  Ведущий системный администратор 
+              </div>
+              <div class='duration'>
+                 Dec 2016   - Jul 2018 
+              </div>
+            </div>
+            <div class='info'>
+             </div>
+          </div>
+        </div>
+      </section>
+            </div>
+  </div>
+</body>
+
+</html>
